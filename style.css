@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#page1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.btn {
+    width: 250px;
+    height: 60px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+div.btn>span {
+    font-size: 50px;
+}
