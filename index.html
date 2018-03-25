@@ -2,24 +2,41 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <title>High Low</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="./setting.js"></script>
     </head>
     <body>
-        <div id="page1" class="page">
-            <div class="btn" id="level1"><span id="easy" data-limit="10">Easy</span></div><br>
-            <div class="btn" id="level2"><span id="normal" data-limit="100">Normal</span></div><br>
-            <div class="btn" id="level3"><span id="hard" data-limit="1000">Hard</span></div><br>
+        <div class="box">
+            <div id="page1" class="page">
+                <div class="button_base b03_skewed_slide_in btn" id="level1">
+                    <div><span id="easy" data-limit="10">Easy</span></div>
+                    <div></div>
+                    <div>1 to 10</div>
+                </div>
+                <div class="button_base b03_skewed_slide_in btn" id="level2">
+                    <div><span id="normal" data-limit="100">Normal</span></div>
+                    <div></div>
+                    <div>1 to 100</div>
+                </div>
+                <div class="button_base b03_skewed_slide_in btn" id="level3">
+                    <div><span id="hard" data-limit="1000">Hard</span></div>
+                    <div></div>
+                    <div>1 to 1000</div>
+                </div>
+            </div>
+            <div id="page2" class="page">
+                <div id="text"></div>
+                <div class="input-group mb-3">
+                    <input type="number" id="num" placeholder="값을 입력해 주세요." class="form-control">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="result">Button</button>
+                    </div>
+                </div>
+            </div>
+            <div id="page3" class="page">ㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊ</div>
         </div>
-
-        <div id="page2" class="page">
-            <div id="text"></div>
-            <input type="number" id="num" placeholder="값을 입력해 주세요.">
-            <button id="result">click</button>
-        </div>
-
-        <div id="page3" class="page">ㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊㅊ</div>
         <script src="./script.js"></script>
     </body>
 </html>
